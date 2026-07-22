@@ -1,4 +1,4 @@
-# Keystroke Dynamics Authentication using CNN1D
+# Keystroke Dynamics Authentication using CNN1D (Model 1)
 
 ## Overview
 This project presents a deep learning approach for user authentication based on **Keystroke Dynamics**, a behavioral biometric technique that identifies users through their typing patterns. The model is trained on the **CMU Keystroke Dynamics Benchmark Dataset** and performs multiclass user identification using a one-dimensional Convolutional Neural Network (CNN1D).
