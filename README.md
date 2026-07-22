@@ -97,3 +97,18 @@ To improve model transparency, SHAP is used to identify the most influential key
 ## License
 
 This project is intended for research and educational purposes.
+
+# Keystroke Dynamics Authentication using Resnet1D (Model 2)
+
+
+Keystroke dynamics has emerged as a reliable behavioral biometric for user authentication due to its non-intrusive nature, low deployment cost, and ability to capture unique typing patterns. This project presents an end-to-end deep learning framework for fixed-text keystroke dynamics authentication using the **CMU Keystroke Dynamics Benchmark Dataset**. The framework is designed to learn discriminative temporal representations directly from keystroke timing features while achieving high authentication accuracy and robust generalization.
+
+The proposed architecture combines a **ResNet1D** backbone with **Bidirectional Long Short-Term Memory (BiLSTM)** and an **Attention Pooling** mechanism. ResNet1D extracts hierarchical local temporal features from keystroke sequences through residual learning, while the BiLSTM captures long-range contextual dependencies in both forward and backward directions. The attention pooling layer automatically assigns higher importance to the most informative temporal features, enabling the model to focus on keystroke events that contribute most significantly to user identification.
+
+To improve model robustness and reduce overfitting, several optimization strategies are incorporated throughout the training process. These include **StandardScaler** normalization, Gaussian noise augmentation, **Mixup** data augmentation, **Label Smoothing**, **Cosine Annealing Learning Rate Scheduling**, gradient clipping, dropout regularization, and **Early Stopping** based on validation loss. Together, these techniques enhance class separability, improve convergence, and increase the model's ability to generalize to unseen samples.
+
+The proposed framework is evaluated using a comprehensive set of biometric and classification metrics, including **Accuracy, Precision, Recall, F1-Score, ROC Curve, Confusion Matrix, False Acceptance Rate (FAR), False Rejection Rate (FRR),** and **Equal Error Rate (EER)**. Authentication performance is further analyzed using genuine and impostor verification scenarios to assess the practical reliability of the system in real-world biometric applications.
+
+Experimental results demonstrate that the proposed framework achieves a **95% test accuracy**, with a **False Acceptance Rate (FAR) of 0.03%**, a **False Rejection Rate (FRR) of 10.16%** at a decision threshold of **0.90**, and an **Equal Error Rate (EER) of 1.02%**. Furthermore, the model attains **precision exceeding 90% for every enrolled user**, indicating its strong capability to accurately distinguish genuine users from impostors while maintaining a very low false acceptance rate.
+
+Overall, this project demonstrates that integrating **ResNet1D**, **BiLSTM**, and **Attention Pooling**, together with modern deep learning optimization techniques such as Mixup and Label Smoothing, provides an accurate, robust, and scalable solution for keystroke-based biometric authentication. The implementation can serve as a strong baseline for future research in behavioral biometrics and explainable deep learning.
