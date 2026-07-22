@@ -94,10 +94,6 @@ To improve model transparency, SHAP is used to identify the most influential key
 - Cross-dataset evaluation.
 - Real-time authentication deployment.
 
-## License
-
-This project is intended for research and educational purposes.
-
 # Keystroke Dynamics Authentication using Resnet1D (Model 2)
 
 This project presents an explainable deep learning framework for fixed-text keystroke dynamics authentication using the CMU Keystroke Dynamics Benchmark Dataset.
@@ -121,3 +117,6 @@ For model interpretability, **Grad-CAM** is integrated to visualize the temporal
 - **Equal Error Rate (EER):** 1%
 
 This framework demonstrates that combining deep temporal learning with explainable AI techniques can significantly improve both the performance and interpretability of keystroke-based biometric authentication systems.
+
+## License
+This project is intended for research and educational purposes.
